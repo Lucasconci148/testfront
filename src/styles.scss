@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+$yellow_ml: #FFE600;
+$grayscale-3: #333333;
+$grayscale-2: #999999;
+$grayscale-1: #EEEEEE;
+$blue-success: #3483FA;
+
+body {
+    background-color: $grayscale-1 !important;
+  }
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
