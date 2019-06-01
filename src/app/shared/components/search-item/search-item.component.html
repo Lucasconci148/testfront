@@ -1,0 +1,15 @@
+<div class="item">
+  <img class="item__image" [src]="data.thumbnail">
+  <div class="item__description">
+    <div class="item__price-row">
+      <label class="description__title">${{ data.price }}</label>
+      <img 
+        *ngIf="data.accepts_mercadopago" 
+        src="../../../../assets/ic_shipping@2x.png.png" 
+        class="item__imageMP">
+    </div>
+    <label class="description__text">{{ data.title }}</label>
+  </div>
+  <label class="item__location">{{ data.address.state_name }}</label>
+</div>
+<div class="separator"></div>

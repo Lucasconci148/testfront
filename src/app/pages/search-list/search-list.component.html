@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-12">
+        <app-search-item 
+            [data]="item"
+            *ngFor="let item of resultItems"
+            (click)="goTo(item.id)">
+        </app-search-item>
+    </div>
+</div>

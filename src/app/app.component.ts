@@ -7,9 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-front';
 
-  constructor( private _router: Router) {
+  constructor(private _router: Router) {
   }
 
   goTo(a) {

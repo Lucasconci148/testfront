@@ -1,0 +1,49 @@
+@import "../../../../styles.scss";
+
+.navbar {
+    background-color: $yellow_ml;
+    height: 68px;
+    width: 100%;
+    z-index: 1;
+  
+    &__content {
+      align-items: center;
+      display: flex;
+      margin: auto;
+      max-width: 1200px;
+      width: 90%;
+    }
+
+    &__search-bar {
+      border-radius: 8px ,0px, 0px, 8px;
+      box-shadow: 0.2px $grayscale-2;
+      margin-left: 20px;
+      color: $grayscale-2;
+      padding: 5px;
+      height: 2.2em;
+      background-color: $white-color;
+      outline: none;
+      border: 0;
+      width: 70%;
+    }
+
+    &__button-search {
+      height: 2.2em;
+      width: 2.8em;
+      background-color: $grayscale-1;
+      box-shadow: 0.2px $grayscale-2;
+
+    }
+
+    &__button-search:hover {
+      cursor: pointer;
+    }
+
+    &__icon{
+      margin: 5px 0px 0px 15px;
+    }
+
+    &__img{
+    }
+  
+}

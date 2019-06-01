@@ -5,15 +5,17 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TestService {
-
-  url = 'https://api.mercadolibre.com/sites/MLA/search?q=​iphone';
+  urlBase = 'https://api.mercadolibre.com/';
 
   constructor(
     private http: HttpClient,
   ) { }
 
-  getLastThreeTransactions() {
-    return this.http.get<any>(this.url);
+  getItems(query: String) {
+    return this.http.get(`${this.urlBase}sites/MLA/search?q=​${query}`);
   }
 
+  getElement(itemId: String) {
+    return this.http.get(`${this.urlBase}items/${itemId}`);
+  }
 }

@@ -1,0 +1,52 @@
+@import '../../../../styles.scss';
+
+.item {
+    display: flex;
+    padding: 20px;
+    background-color: $white-color;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__price-row {
+        display: flex;
+    }
+
+    &__image {
+        height: 12em;
+        width: 12em;
+    }
+
+    &__imageMP {
+        height: 30px;
+        width: 30px;
+        margin: 10px
+    }
+
+    &__description {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__location {
+        margin-left: auto;
+        padding: 1em 1em 1em 3em;
+    }
+}
+
+.description {
+    &__title {
+        font-size: 2em;
+    }
+
+    &__content {
+        font-size: 1em;
+    }
+}
+
+.separator {
+    height: 2px; 
+    width: 90%;
+}

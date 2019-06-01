@@ -1,21 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { TestService } from '../../shared/services/test.services';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit {
-
-  constructor(private service: TestService) { }
-
-  ngOnInit() {
-    this.service.getLastThreeTransactions().subscribe(
-      (res) => {
-        console.log(res);
-      }
-    );
-  }
+export class HomeComponent {
 
 }

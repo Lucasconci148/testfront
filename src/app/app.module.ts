@@ -4,15 +4,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TestService } from './shared/services/test.services';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+  ],
+  exports: [
+    NavbarComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [TestService],
   bootstrap: [AppComponent]
