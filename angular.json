@@ -132,7 +132,7 @@
   "defaultProject": "test-front",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "css"
+      "styleext": "scss"
     }
   }
 }

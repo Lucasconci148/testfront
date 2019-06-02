@@ -5,8 +5,7 @@ import { TestService } from 'src/app/shared/services/test.services';
 
 @Component({
   selector: 'app-search-list',
-  templateUrl: './search-list.component.html',
-  styleUrls: ['./search-list.component.scss']
+  templateUrl: './search-list.component.html'
 })
 export class SearchListComponent implements OnInit {
 
@@ -30,14 +29,6 @@ export class SearchListComponent implements OnInit {
      this.service.getItems(query).subscribe(
        (res) => {
          for (let i = 0; i < items; i++) {
-          //  const element = new SearchItem({
-          //    id: res['results'][i]['id'],
-          //    thumbnail: res['results'][i]['thumbnail'],
-          //    accepts_mercadopago: res['results'][i]['accepts_mercadopago'],
-          //    price: res['results'][i]['price'],
-          //    address: res['results'][i]['address'],
-          //    title: res['results'][i]['title']
-          //  });
             const element = new SearchItem(res['results'][i]);
             this.resultItems.push(element);
          }

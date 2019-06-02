@@ -15,7 +15,6 @@ export class NavbarComponent {
     ) { }
 
   buscar() {
-    const url  = `/items?search=${this.query}`;
     this._router.navigate(['/items'], { queryParams: { search: this.query }});
   }
 }

@@ -10,12 +10,10 @@
       align-items: center;
       display: flex;
       margin: auto;
-      max-width: 1200px;
       width: 90%;
     }
 
     &__search-bar {
-      border-radius: 8px ,0px, 0px, 8px;
       box-shadow: 0.2px $grayscale-2;
       margin-left: 20px;
       color: $grayscale-2;
@@ -25,14 +23,14 @@
       outline: none;
       border: 0;
       width: 70%;
+      font-size: 18px;
     }
 
     &__button-search {
-      height: 2.2em;
-      width: 2.8em;
+      height: 2.5em;
+      width: 3.2em;
       background-color: $grayscale-1;
-      box-shadow: 0.2px $grayscale-2;
-
+      box-shadow: 1px $grayscale-2;
     }
 
     &__button-search:hover {
@@ -40,10 +38,6 @@
     }
 
     &__icon{
-      margin: 5px 0px 0px 15px;
+      margin: 10px 0px 0px 15px;
     }
-
-    &__img{
-    }
-  
 }

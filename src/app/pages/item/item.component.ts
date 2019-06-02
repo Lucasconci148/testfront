@@ -12,6 +12,8 @@ export class ItemComponent implements OnInit {
 
   public itemDetail: ItemDetail = new ItemDetail();
   public imageUrl: String = '';
+  public lorem: String =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
   constructor(
     private route: ActivatedRoute,

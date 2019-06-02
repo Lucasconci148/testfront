@@ -1,19 +1,19 @@
 <div class="row">
-    <div class="col-8">
+    <div class="col-8" style="background-color: #fafafa; padding: 32px;">
       <div class="left-card">
         <img
           [src]="imageUrl" 
           class="left-card__img">
         <label class="left-card__title">Descripcion del producto</label>
-        <label>El convenio prevé, además, suspensiones temporales de sus actividades productivas en la planta de vehículos particulares y utilitarios, la posibilidad que el personal adelante vacaciones y la prórroga de 480 contratos a plazo fijo. También, Renault asume el compromiso de mantener las 1.500 fuentes de trabajo vigentes, "no produciendo despidos por razones económicas o falta de trabajo".</label>
+        <label class="left-card__description">{{ lorem }}</label>
       </div>
     </div>
   
-    <div class="col-4 left-card">
-        <div class="left-card">
-          <label>nuevo {{ itemDetail.sold_quantity}} vendidos</label>
-          <label style="font-size: 1.5em;">{{ itemDetail.title }}</label>
-          <label style="font-size: 1.7em;">$ {{ itemDetail.price }}</label>
+    <div class="col-4" style="background-color: #fafafa; padding: 32px" >
+        <div class="right-card">
+          <label class="right-card__sold">Nuevo - {{ itemDetail.sold_quantity }} vendidos</label>
+          <label class="label-text">{{ itemDetail.title }}</label>
+          <label class="right-card__price">$ {{ itemDetail.price }}</label>
           <app-primary-btn></app-primary-btn>
         </div> 
     </div>  
