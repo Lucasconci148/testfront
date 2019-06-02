@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { TestService } from './shared/services/test.services';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
